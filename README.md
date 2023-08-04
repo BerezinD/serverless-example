@@ -1,4 +1,4 @@
-# serverless-example serverless API
+# Spring Boot + AWS Lambda - serverless API
 The serverless-example project, created with [`aws-serverless-java-container`](https://github.com/awslabs/aws-serverless-java-container).
 Could be used only for educational purposes.
 
@@ -10,7 +10,7 @@ The project folder also includes a `template.yml` file. You can use this [SAM](h
 ## Pre-requisites
 * [AWS CLI](https://aws.amazon.com/cli/)
 * [SAM CLI](https://github.com/awslabs/aws-sam-cli)
-* [Gradle](https://gradle.org/) or [Maven](https://maven.apache.org/)
+* [Maven](https://maven.apache.org/)
 
 ## Building the project
 You can use the SAM CLI to quickly build the project
@@ -18,19 +18,6 @@ You can use the SAM CLI to quickly build the project
 $ mvn archetype:generate -DartifactId=serverless-example -DarchetypeGroupId=com.amazonaws.serverless.archetypes -DarchetypeArtifactId=aws-serverless-jersey-archetype -DarchetypeVersion=2.0.0-M2 -DgroupId=dev.example -Dversion=1.0-SNAPSHOT -Dinteractive=false
 $ cd serverless-example
 $ sam build
-Building resource 'ServerlessExampleFunction'
-Running JavaGradleWorkflow:GradleBuild
-Running JavaGradleWorkflow:CopyArtifacts
-
-Build Succeeded
-
-Built Artifacts  : .aws-sam/build
-Built Template   : .aws-sam/build/template.yaml
-
-Commands you can use next
-=========================
-[*] Invoke Function: sam local invoke
-[*] Deploy: sam deploy --guided
 ```
 
 ## Testing locally with the SAM CLI
